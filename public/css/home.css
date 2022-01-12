@@ -1,31 +1,9 @@
-#logo{
-height: 150px;
-width: 150px;
-margin-left:40px ;
-}
- #cart{
-    height: 100px;
-    width: 100px;
-    margin-top: -30px;
-}
-ul li{
-    margin-right: 40px; 
-}
-ul{
-    margin-top: 50px;
-}
-li:hover{
-    color: rgb(233, 83, 83);
-}
-nav{
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 12px whitesmoke;
-} 
+
 .pizzaimg{
     height: 600px;
     width: 550px;
 }
+
 .right
 {
     width: 50%;
@@ -49,16 +27,21 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #midbutton{
-    margin-left: 100px;
-    background-color: rgb(235, 99, 99);
-    border-radius: 10px;
-    height: 30px;
-    width: 100px;
-    color: white;
-    margin-top: 10px;
+    margin-left: 145px;
+   color: rgb(255, 255, 255);
+   border:rgb(235, 99, 99) solid 2px;
+   padding: 4px 12px 4px 12px;
+   border-radius:20px ;
+   background-color:rgb(235, 99, 99)  ;
+}
+#midbutton:hover{
+background-color: rgb(201, 64, 64);
+transition: 0.6s;
+border:rgb(201, 64, 64) solid 2px;
 }
 body{
     height: 4000px;
+    background-color: rgb(255, 254, 254);
 }
 .menuonly{
     margin-top: 50px;

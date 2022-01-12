@@ -1,36 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-<body>
-<nav class="constainer max-auto flex items-center justify-between">
-    <div>
-        <img id="logo" src="/img/pizza.png"alt="logo">
-    </div>
-    <div>
-        <ul class="flex item-center ">
-            <li class="ml-6"><a href="#">Menu</a></li>
-            <li class="ml-6"><a href="#">Offers</a></li>
-            <li class="ml-6"><a href="#">Register</a></li>
-            <li class="ml-6"><a href="#">Login</a></li>
-            <li class="ml-6"><a href="#"><img id="cart"src="/img/cart.png"></a></li>
-        </ul>
-    </div>
-</nav>
+<%- include("./partials/nav.ejs") %>
+<link rel="stylesheet" href="/css/home.css">
 <section class="mid">
     <div class="constainer max-auto flex items-center justify-between">
     <div class="left">
      <h6 id="leftone"><em>Are you hungry ?</em></h6>
      <h1 id="lefttwo">Don't wait !</h1>
-     <button id="midbutton"type="button">Order now</button>
+     <button id="midbutton"type="button">Order Now</button>
     </div>
     <div class="right">
  <img class="pizzaimg"src="/img/pizzaphoto.png"alt="pizzaimage">
