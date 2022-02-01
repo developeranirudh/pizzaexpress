@@ -19,7 +19,7 @@ router.post('/register', async (req, res) => {
       from: process.env.EMAIL,
       subject: 'Registered In Pizza Express',
       html: `
-      <strong> Hello,<br> Dear ${data.name} You just registered in Our Pizza Express Website</Strong>
+      <strong> Hello,<br> Dear ${data.name} You just registered in Our Pizza Express Website.</Strong>
       <br>
       <img src="https://github.com/anirudh079/Anirudh-Assignment-005-Chitkara-Coding-Block/blob/main/portfolio/pizza.png?raw=true"alt="logo">
       <br>
@@ -63,7 +63,7 @@ router.post('/login', async (req, res) => {
         from: process.env.EMAIL,
         subject: 'Logged-In Pizza Express',
         html: `
-         <strong> Hello,<br> Dear ${data.name} You just Logged-In in Our Pizza Express Website</Strong>
+         <strong> Hello,<br> Dear ${data.name} You just Logged-In in Our Pizza Express Website.</Strong>
          <br>
          <img src="https://github.com/anirudh079/Anirudh-Assignment-005-Chitkara-Coding-Block/blob/main/portfolio/pizza.png?raw=true"alt="logo">
          <br>
