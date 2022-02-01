@@ -1,69 +1,45 @@
 <%- include("../partials/nav.ejs") %>
-<link rel="stylesheet" href="css/orderemptycart.css">
-<section class="empty-cart">
-    <div class="container mx-auto text-center">
-    <h1 class="text-3xl font-bold mb-2"> Cart Empty🤔</h1>
-    <p class="paraempty">You probably haven't ordered a pizza yet.
-      To order a pizza, go to the main page.</p>
-      <div class="imgempty">
-    <img id=imgempty src="img/empty-cart.png" alt="empty-cart">
-    </div>
-    <a href="/" class=" buttoncart inline-block px-6 py-2 rounded-full">Go Back</a>
-    </div>
-</section>
+<link rel="stylesheet" href="css/ordercart.css">
 <section class="cart">
  <div class="order container mx-auto">
    <div class="order-div">
      <img src="img/ordercart.png" id="orderimg"alt="ordercart">
      <h1 id="order-h1">Order Summary</h1>
    </div>
-   <hr>
-   
-   <div class="ordersum"> 
-    <img src="img/pizzacart.png" alt="pizza" id="sumpizza">
-    <h1>Vegies</h1>
-    <span>MEDIUM</span>
-  <span>1 Pcs</span>
-  <span><b>&#8377 300</b></span>
- </div> 
- <div class="ordersum"> 
-  <img src="img/pizzacart.png" alt="pizza" id="sumpizza">
-  <h1>Vegies</h1>
-  <span>MEDIUM</span>
-<span>1 Pcs</span>
-<span><b>&#8377 300</b></span>
-</div> 
-
-<div class="ordersum"> 
-  <img src="img/pizzacart.png" alt="pizza" id="sumpizza">
-  <h1>Vegies</h1>
-  <span>MEDIUM</span>
-<span>1 Pcs</span>
-<span><b>&#8377 400</b></span>
-</div> 
-<div class="ordersum"> 
-  <img src="img/pizzacart.png" alt="pizza" id="sumpizza">
-  <h1>Vegies</h1>
-  <span>MEDIUM</span>
-<span>1 Pcs</span>
-<span><b>&#8377 300</b></span>
-</div> 
+   <hr>  
+   <% let total=0%>
+   <%for (const data of cartdata){%>
+    <%total+=data.price%>
+    <div class="ordersum"> 
+     <img src="<%=data.image%>" alt="pizza" id="sumpizza">
+     <span id="pizza-name"><%=data.name%></span>
+   <span><b>&#8377 <%=data.price%></b></span>
+   <form action="/deletecart/<%=data.id%>" method="post" class="deletebutton">
+    <button id="delete-pizza">❌</button>
+   </form>
+  </div> 
+  <%}%><hr>
 <hr>
+<br>
+<br>
 <div class="total-div">
-  <h2 id="total">Total Amount:</h2>
-  <h1 id="price">&#8377 1000</h1>
+<h2 id="total">Total Amount:</h2>
+<h1 id="price">&#8377 <%=total%></h1>
 </div>
-<div class="form-order">
-  <form action="">
-    <input type="number" class="border border-gray-600 p-2 mb-4 w-1/2 " placeholder="PhoneNumber" id="phonenumer">
-    <input type="address" class="border border-gray-600  mb-4 w-1/2   p-2 " placeholder="Address" id="address">
-  </form>
+<br>
+<br>
+<form action="/order" method="post" >
+<div id="dataform">
+  <input type="tel"  maxlength="10" class="border border-gray-600 p-2 mb-4 " placeholder="Phone-Number" name="phonenumber" required> 
+  <input type="text" class="border border-gray-600 p-2 mb-4 " placeholder="Address" name="address" required>
 </div>
- <div id="button-order">
-  <button id="orderbutton"type="button">Order Now</button>
+<br>
+<div  id="button-order">
+<button type="submit" id="orderbutton">Cash On Delivery</button>
 </div>
-<div id="button-login">
-<!-- <a href="/" class=" login px-6 py-2 rounded-full">Login to Continue</a> -->
-</div>
-</div>
+</form> 
 </section>
+<br>
+<br>
+<br>
+<%- include("../partials/footer.ejs") %>

@@ -1,0 +1,55 @@
+[
+ {
+    "id": 1,
+    "name": "Margherita",
+    "image": "https://images.dominos.co.in/new_margherita_2502.jpg",
+    "price": 99,
+    "size": "Small"
+},
+{
+    "id": 2,
+    "name": "Pepper Barbecue Chicken",
+    "image": "https://images.dominos.co.in/new_pepper_barbeque_chicken.jpg",
+    "price": 300,
+    "size": "Medium"
+},
+{
+    "id": 3,
+    "name": "Chicken Sausage",
+    "image": "https://images.dominos.co.in/new_pepper_barbeque_chicken.jpg",
+    "price": 350,
+    "size": "Large"
+},
+{
+    "id": 4,
+    "name": "Cheese n Corn",
+    "image": "https://images.dominos.co.in/new_cheese_n_corn.jpg",
+    "price": 250,
+    "size": "Medium"
+},
+{
+    "id": 5,
+    "name": "Veggie Paradise",
+    "image": "https://images.dominos.co.in/new_veggie_paradise.jpg",
+    "price": 399,
+    "size": "Large"
+},
+{
+    "id": 6,
+    "name": "Veg Extravaganza",
+    "image": "https://images.dominos.co.in/new_veg_extravaganza.jpg",
+    "price": 299,
+    "size": "Medium"
+},
+{
+    "id": 7,
+    "name": "Farmhouse",
+    "image": "https://images.dominos.co.in/farmhouse.png",
+    "price": 199,
+    "size": "Small"
+}
+
+]
+      
+         
+    

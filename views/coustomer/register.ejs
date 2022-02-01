@@ -1,16 +1,26 @@
-<%- include("../partials/nav.ejs") %>
+<%- include("../partials/authnav.ejs") %>
 <link rel="stylesheet" href="css/register.css">
 
 <section class="login-form">
 <div class="login">
-    <form action="#">
+    <h2 id="H2">Create Account</h2>
+    <form action="/register" method="POST">
+        <% if(error && error.length){ %>
+            <div>    
+            <h3 style="color:rgb(216, 36, 36);"> <%= error %></h3> 
+    </div>  
+        <% } %> 
     <label id="label" for="name">Name</label><br>
-     <input type="text"  id="name" placeholder="Name" required><br>
-     <label id="label" for="email">E-mail</label><br>
-     <input type="email"  id="email" placeholder="E-mail" required><br>
-     <label id="label" for="password">Password</label><br>
-     <input type="password" id="password" placeholder="Password"equired><br>
+     <input type="text"  id="name"  name="name" placeholder="Name" required ><br>
+     <label id="label" for="email" >E-mail</label><br>
+     <input type="email"  id="email"name="email" placeholder="E-mail" required><br>
+     <label id="label" for="password" >Password</label><br>
+     <input type="password" id="password" name="password" placeholder="Password" required><br>
      <button id="login-button" type="submit">Sign up</button>
     </form>
 </div>
 </section>
+<br>
+<br>
+<br>
+<%- include("../partials/footer.ejs") %>
