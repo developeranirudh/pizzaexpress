@@ -1,67 +1,172 @@
-
-.pizzaimg{
-    height: 600px;
-    width: 550px;
+.pizzaimg {
+  height: 600px;
+  width: 550px;
 }
 
-.right
-{
-    width: 50%;
-    /* border: black 2px solid; */
-    margin-top: 40px;
+.right {
+  width: 50%;
+  /* border: black 2px solid; */
+  margin-top: 40px;
 }
-.left{
+.left {
+  width: 50%;
+  /* border: black 2px solid; */
+  margin-left: 20px;
+}
+#leftone {
+  margin-left: 100px;
+  font-size: 60px;
+}
+#allpizza {
+  font-size: 20px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+#lefttwo {
+  margin-left: 100px;
+  font-size: 40px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#midbutton {
+  /* margin-top: 100px; */
+  margin-left: 145px;
+  color: rgb(255, 255, 255);
+  border: rgb(235, 99, 99) solid 2px;
+  padding: 4px 12px 4px 12px;
+  border-radius: 20px;
+  background-color: rgb(235, 99, 99);
+}
+#midbutton:hover {
+  background-color: rgb(201, 64, 64);
+  transition: 0.6s;
+  border: rgb(201, 64, 64) solid 2px;
+}
+body {
+  /* height: 4000px; */
+  background-color: rgb(255, 254, 254);
+}
+.menuonly {
+  margin-top: 50px;
+  /* border: 2px solid black; */
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#pizzas {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 2px solid rgb(121, 13, 13); */
+  height: 290px;
+  width: 310px;
+  margin-left: 30px;
+  border: 0.5px solid rgb(243, 241, 241);
+  box-shadow: 4px 4px 5px rgb(226, 226, 226);
+  border-radius: 10px;
+}
+figure {
+  width: 100%;
+  height: 100;
+}
+
+figcaption h4 {
+  /* text-align: center; */
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: monosp;
+}
+figcaption h6 {
+  margin-top: 6px;
+  margin-left: 15px;
+  font-family: monospace;
+  font-size: 15px;
+  /* background-color: rgb(211, 206, 206); */
+  border-radius: 5px;
+  width: 80px;
+  /* margin-left: 115px; */
+  /* text-align: center; */
+  padding: 1px 10px 1px 10px;
+}
+#rate {
+  display: inline;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+#cartbutton {
+  margin-left: 200px;
+  color: rgb(235, 99, 99);
+  border: rgb(235, 99, 99) solid 2px;
+  padding: 2px 10px 2px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+#cartbutton:hover {
+  background-color: rgb(235, 99, 99);
+  color: aliceblue;
+}
+@media only screen and (max-width: 1200px) {
+  .pizzaimg {
+    height: 300px;
+    width: 350px;
+  }
+  #midbutton {
+    height: 20px;
+    width: 60px;
+    padding: 4px 4px 10px 12px;
+    font-size: 6px;
+    /* margin-top: -60px; */
+  }
+  #leftone {
+    margin-top: 130px;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .left {
     width: 50%;
+    height: 400px;
     /* border: black 2px solid; */
     margin-left: 20px;
-}
-#leftone
-{
+  }
+  #lefttwo {
     margin-left: 100px;
-    font-size: 60px;
-}
-#allpizza{
-    font-size: 20px;
-    margin-left: 50px;
-    font-weight:  bold ;
-
-}
-#lefttwo{
-    margin-left: 100px;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 }
-#midbutton{
-    /* margin-top: 100px; */
-    margin-left: 145px;
-   color: rgb(255, 255, 255);
-   border:rgb(235, 99, 99) solid 2px;
-   padding: 4px 12px 4px 12px;
-   border-radius:20px ;
-   background-color:rgb(235, 99, 99)  ;
-}
-#midbutton:hover{
-background-color: rgb(201, 64, 64);
-transition: 0.6s;
-border:rgb(201, 64, 64) solid 2px;
-}
-body{
-    /* height: 4000px; */
-    background-color: rgb(255, 254, 254);
-}
-.menuonly{
-    margin-top: 50px;
+@media only screen and (max-width: 600px) {
+  .right {
+    width: 30%;
+    /* border: black 2px solid; */
+    margin-top: 40px;
+  }
+  .menu {
+    margin-top: -20%;
+  }
+  .menuonly {
+    margin-top: 15px;
     /* border: 2px solid black; */
-    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-#pizzas{
-    margin-top: 20px;
-    margin-bottom: 20px;
+  }
+  .section2 {
+    margin-top: -30%;
+    margin-left: -20%;
+  }
+  .section22 {
+    margin-top: -10%;
+    margin-left: -20%;
+  }
+  .section3 {
+    margin-top: -30%;
+  }
+  #pizzas {
+    margin-top: 5px;
     /* border: 2px solid rgb(121, 13, 13); */
     height: 290px;
     width: 310px;
@@ -69,153 +174,39 @@ body{
     border: 0.5px solid rgb(243, 241, 241);
     box-shadow: 4px 4px 5px rgb(226, 226, 226);
     border-radius: 10px;
-}
-figure{
-  
-    width: 100%;
-    height: 100;
+  }
+  .pizzaimg {
+    height: 200px;
+    width: 200px;
   }
 
-figcaption h4{
-    /* text-align: center; */
-    margin-left: 15px;
-    margin-top: 15px;
-    font-family: monosp
-}
-figcaption h6{
-    
-    margin-top: 6px;
-    margin-left: 15px;
-    font-family: monospace;
-    font-size: 15px;
-    /* background-color: rgb(211, 206, 206); */
-    border-radius: 5px;
-    width: 80px;
-    /* margin-left: 115px; */
-    /* text-align: center; */
-    padding: 1px 10px 1px 10px;
-}
-#rate{
-    display: inline;
-    margin-left: 20px;
-    margin-top: 50px;
-}
-
-#cartbutton{
-   margin-left: 200px;
-   color: rgb(235, 99, 99);
-   border:rgb(235, 99, 99) solid 2px;
-   padding: 2px 10px 2px 30px;
-   border-radius:20px ;
-   margin-top: 30px;
-}
-
-#cartbutton:hover{
-    background-color:  rgb(235, 99, 99);
-    color: aliceblue;
-}
-@media only screen and (max-width: 1200px) {
- .pizzaimg{
-        height: 300px;
-        width: 350px;
-    }
-    #midbutton{
-      height: 20px;
-      width: 60px;
-      padding: 4px 4px 10px 12px;
-      font-size: 6px;
-      /* margin-top: -60px; */
-    }
-    #leftone
-{
-    margin-top: 130px;
-    margin-left: 100px;
-    font-size: 30px;
-}
-.left{
-    width: 50%;
-    height: 400px;
+  .left {
+    width: 65%;
+    height: 500px;
     /* border: black 2px solid; */
-    margin-left: 20px;
-}
-#lefttwo{
+    margin-left: 30px;
+  }
+  #leftone {
+    margin-top: 200px;
     margin-left: 100px;
-    font-size: 30px;
+    font-size: 15px;
+  }
+  #lefttwo {
+    margin-left: 100px;
+    font-size: 25px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #midbutton {
+    height: 20px;
+    width: 60px;
+    padding: 4px 4px 10px 12px;
+    /* margin-left:-2px ; */
+    font-size: 6px;
+  }
+  #allpizza {
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+  }
 }
-
-    }
-    @media only screen and (max-width: 600px) {
-    
-.right
-{
-    width: 30%;
-    /* border: black 2px solid; */
-    margin-top: 40px;
-}
-.menu{
-    margin-top: -20%;
-}
-        .menuonly{
-            margin-top: 15px;
-            /* border: 2px solid black; */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-        .section2
-        {
-            margin-top: -30%;
-            margin-left: -20%;
-        }
-        .section3{
-            margin-top: -30%;
-        }
-        #pizzas{
-            margin-top: 5px;
-            /* border: 2px solid rgb(121, 13, 13); */
-            height: 290px;
-            width: 310px;
-            margin-left: 30px;
-            border: 0.5px solid rgb(243, 241, 241);
-            box-shadow: 4px 4px 5px rgb(226, 226, 226);
-            border-radius: 10px;
-        }
-        .pizzaimg{
-            height: 200px;
-            width: 200px;
-        }
-    
-        .left{
-            width: 65%;
-            height: 500px;
-            /* border: black 2px solid; */
-            margin-left: 30px;
-        }
-        #leftone
-        {
-            margin-top: 200px;
-            margin-left: 100px;
-            font-size: 15px;
-        }
-        #lefttwo{
-            margin-left: 100px;
-            font-size: 25px;
-            color: black;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        #midbutton{
-            height: 20px;
-            width: 60px;
-            padding: 4px 4px 10px 12px;
-            /* margin-left:-2px ; */
-            font-size: 6px;
-          }
-          #allpizza{
-            font-size: 15px;
-            margin-left: 15px;
-            font-weight:  bold ;
-        
-        }
-    }
