@@ -56,7 +56,7 @@ app.use(authenticates);
 app.use(cart);
 ///mongodb connection////
 
-app.listen(port,()=>
+app.listen(process.env.PORT || 3000,()=>
 {
     console.log(`listening on ${port}`);
 }) 
