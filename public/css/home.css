@@ -20,6 +20,12 @@
     margin-left: 100px;
     font-size: 60px;
 }
+#allpizza{
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight:  bold ;
+
+}
 #lefttwo{
     margin-left: 100px;
     font-size: 40px;
@@ -47,12 +53,15 @@ body{
 .menuonly{
     margin-top: 50px;
     /* border: 2px solid black; */
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 #pizzas{
     margin-top: 20px;
+    margin-bottom: 20px;
     /* border: 2px solid rgb(121, 13, 13); */
     height: 290px;
     width: 310px;
@@ -137,13 +146,16 @@ figcaption h6{
 }
 
     }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 600px) {
     
 .right
 {
-    width: 60%;
+    width: 30%;
     /* border: black 2px solid; */
     margin-top: 40px;
+}
+.menu{
+    margin-top: -20%;
 }
         .menuonly{
             margin-top: 15px;
@@ -151,6 +163,14 @@ figcaption h6{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+        }
+        .section2
+        {
+            margin-top: -30%;
+            margin-left: -20%;
+        }
+        .section3{
+            margin-top: -30%;
         }
         #pizzas{
             margin-top: 5px;
@@ -163,15 +183,15 @@ figcaption h6{
             border-radius: 10px;
         }
         .pizzaimg{
-            height: 270px;
-            width: 280px;
+            height: 200px;
+            width: 200px;
         }
     
         .left{
-            width: 60%;
+            width: 65%;
             height: 500px;
             /* border: black 2px solid; */
-            /* margin-left: 5px; */
+            margin-left: 30px;
         }
         #leftone
         {
@@ -192,4 +212,10 @@ figcaption h6{
             /* margin-left:-2px ; */
             font-size: 6px;
           }
+          #allpizza{
+            font-size: 15px;
+            margin-left: 15px;
+            font-weight:  bold ;
+        
+        }
     }
