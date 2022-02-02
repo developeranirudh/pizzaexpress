@@ -33,11 +33,11 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 10px 10px 12px whitesmoke;
     } 
-    @media only screen and (max-width: 500px) { */
+    @media only screen and (max-width: 700px) { 
         
         #logo{
-            height: 40px;
-            width: 40px;
+            height: 70px;
+            width: 70px;
             margin-left:20px ;
             }
             #cart{
@@ -46,6 +46,14 @@
                 margin-top: -7.5px;
                 background-color:rgb(235, 115, 115);
                 border-radius: 80%;
+            }
+            ul li{
+                margin-right: 40px;
+                font-size: 12px;
+            }
+            .username{
+                margin-right: 10px;
+                font-size: 12px;
             }
             
 
