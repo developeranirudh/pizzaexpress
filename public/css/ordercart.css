@@ -111,12 +111,12 @@ input{
         margin-top: 13px;
     }
     #sumpizza{
-        height: 860px;
-        width: 60px;
+        height: 60px;
+        width: 80px;
     }
     #orderbutton{
-        width: 80px;
-        font-size: 10px;
+        width: 60px;
+        font-size: 6px;
     }
     #total{
         font-size: 20px;
