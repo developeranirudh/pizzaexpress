@@ -26,7 +26,7 @@ router.post('/register', async (req, res) => {
       <h3 style="color:#FF9999; font-size:20px; font-family:Verdana; " >Are you hungry ?<br>
       What Are You Waiting For?
       </h3>
-    <button style= "color: rgb(255, 255, 255);border:rgb(235, 99, 99) solid 2px;padding: 4px 12px 4px 12px;border-radius:20px ;background-color:rgb(235, 99, 99)" ;>  OrderNow </button>`,
+    <a  href="https://pizzaexpress2022.herokuapp.com/" style= "color: rgb(255, 255, 255);border:rgb(235, 99, 99) solid 2px;padding: 4px 12px 4px 12px;border-radius:20px ;background-color:rgb(235, 99, 99)" ;>  OrderNow </a>`,
     }
     sendemail(msg);
   }
@@ -70,7 +70,7 @@ router.post('/login', async (req, res) => {
          <h3 style="color:#FF9999; font-size:20px; font-family:Verdana; " >Are you hungry ?<br>
          What Are You Waiting For?
          </h3>
-       <button style= "color: rgb(255, 255, 255);border:rgb(235, 99, 99) solid 2px;padding: 4px 12px 4px 12px;border-radius:20px ;background-color:rgb(235, 99, 99)" ;>  OrderNow </button>`,
+        <a  href="https://pizzaexpress2022.herokuapp.com/" style= "color: rgb(255, 255, 255);border:rgb(235, 99, 99) solid 2px;padding: 4px 12px 4px 12px;border-radius:20px ;background-color:rgb(235, 99, 99)" ;>  OrderNow </a>`,
       }
       sendemail(msg);
     }
