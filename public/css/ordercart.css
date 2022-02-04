@@ -96,8 +96,20 @@ input{
     justify-content: right;
     /* border: black solid 2px; */
 }
+#razorpay{
+    margin-right: 80px;
+    color: rgb(255, 255, 255);
+    border:rgb(0, 156, 240) solid 2px;
+    padding: 4px 12px 4px 12px;
+    border-radius:20px ;
+    background-color:rgb(0, 156, 240)  ;
+}
+#razorpay:hover{
+    background-color: rgb(0, 126, 194) ;
+transition: 0.6s;
+ border: rgb(0, 126, 194) ,solid 2px;
+}
 @media only screen and (max-width: 800px) {
-
     input{
         width: 150px;
         height: 40px;
@@ -115,6 +127,10 @@ input{
         width: 80px;
     }
     #orderbutton{
+        width: 60px;
+        font-size: 6px;
+    }
+    #razorpay{
         width: 60px;
         font-size: 6px;
     }

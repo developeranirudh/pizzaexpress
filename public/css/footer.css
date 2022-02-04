@@ -47,11 +47,13 @@ footer{
         color: whitesmoke;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 10px;
+        margin-left: 20px;
     }
     #footer h3{
         color: black;
         font-size: 6px;
         font-family: monospace;
+        margin-left: 20px;
     }
     #copyright{
         text-align: center;

@@ -5,8 +5,12 @@ const menu = require("../models/menu.js");
 const user =require("../models/user");
 const jwt = require('jsonwebtoken');
 const sendemail = require('../utils/sendemail.js');
-require('dotenv').config();
-const { default: Stripe } = require("stripe");
+require("dotenv").config();
+const razorpay =require('razorpay');
+const Razorpay =new razorpay({
+  key_id:process.env.KEYID,
+  key_secret:process.env.KEYSECRET
+})
 router.get("/cart", async(req, res) => {
     var token = req.cookies.refreshToken;
     const verifyuser=jwt.verify(token,'anirudh');
@@ -21,8 +25,7 @@ router.get("/cart", async(req, res) => {
       res.render("coustomer/emptycart.ejs",{name,size});
     }
     else{
-  
-      res.render("coustomer/cart.ejs",{name,cartdata,size});
+  res.render("coustomer/cart.ejs",{name,cartdata,size});
     }
 
 
@@ -73,5 +76,28 @@ router.post("/order",async(req,res)=>
   sendemail(msg);
   res.redirect('/cart');
 })
+router.post("/order/razorpay",async(req,res)=>{
+//  console.log(req.body);
+ let data=req.body.data.replace('₹','');
+//  console.log(data);
+  let options={
+    key: "rzp_test_oNVqyKsipYBOdq", // Enter the Key ID generated from the Dashboard
+    amount: data*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    currency: "INR",
+    name: "Pizza Express",
+    description: "Test Transaction",
+    image: "https://ci3.googleusercontent.com/proxy/6RIsMI4hG9rLmrP310H_1XkziPONd8RAZG4sSE-IPjtZACDey-gYQOOfKkOUgu7VMyxeMvtaEXJG-z55gakERBGbyPN3NpuqWnhqh47fsWZviTfDBJb49XSZLUMYRhYCXbxyXJ5IJUuTt2AJ75w435_obWAVdSVErexMoEUsSBrzfanL=s0-d-e1-ft#https://github.com/anirudh079/Anirudh-Assignment-005-Chitkara-Coding-Block/blob/main/portfolio/pizza.png?raw=true",
+    // "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    callback_url: "https://eneqd3r9zrjok.x.pipedream.net/",
+    theme: {
+        color: "rgb(235,99, 99)"
+    }
+  };
+  Razorpay.orders.create(options,(err,order)=>{
+    // console.log(orders);
+    res.json(options);
+  })
 
+
+});
 module.exports = router;

@@ -1,5 +1,7 @@
 <%- include("../partials/nav.ejs") %>
 <link rel="stylesheet" href="css/ordercart.css">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <section class="cart">
  <div class="order container mx-auto">
    <div class="order-div">
@@ -36,9 +38,23 @@
 <br>
 <div  id="button-order">
 <button type="submit" id="orderbutton">Cash On Delivery</button>
+<button  id="razorpay">Razorpay</button>
 </div>
 </form> 
 </section>
+<script>
+  var x = document.getElementById("price").textContent;
+    axios.post('/order/razorpay',{data:x}).then((info)=>
+  {
+    var rzp1 = new Razorpay(info.data);
+document.getElementById('razorpay').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+
+};
+
+  })
+</script>
 <br>
 <br>
 <br>
