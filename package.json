@@ -4,7 +4,7 @@
   "description": "This is a realtime pizza ordering app'",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "anirudh",
   "license": "ISC",
